@@ -23,16 +23,4 @@ public class DeviceService {
 
     public Device getDeviceById(Long id) {
         return deviceRepository.findById(id).orElse(null);
-    }
-
-    public Device updateDevice(Long id, Device device) {
-        device.setId(id);
-        return deviceRepository.save(device);
-    }
-
-    public void deleteDevice(Long id) {
-        deviceRepository.deleteById(id);
-    }
-}
-
-
+   
